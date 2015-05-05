@@ -6,13 +6,13 @@
 -->
 
 <ion-view view-title="{{chat.type}}">
-  <ion-content class="padding">
+  <ion-content class="padding" style="background-color:#F0F0F0">
 
   <div class="list card" ng-controller="detailsModalCtrl">
     <div class="item">
       <h2>{{chat.title}}</h2>
       <p>{{chat.location}}</p>
-      <p>{{chat.date}},&nbsp;{{chat.time}}</p>
+      <p>{{chat.date}}&nbsp;{{chat.time}}</p>
     </div>
 
     <div class="item item-body">
@@ -29,8 +29,6 @@
         Contact: {{chat.contact}}
     </div>
   </div>
-
-
 
   </ion-content>
 </ion-view>
