@@ -1,7 +1,7 @@
 <ion-view view-title="UMKC">
   <ion-content style="background-color:#F0F0F0">
     <ion-list>
-      <ion-item class="list card item-thumbnail-left item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/details/{{chat.id}}">
+      <ion-item class=" item-thumbnail-left item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/details/{{chat.id}}">
         <img ng-src="{{chat.img}}">
           <br>
         <h2>{{chat.title}}</h2>
@@ -12,10 +12,6 @@
         <p>{{chat.date}}</p>
         -->
         <i class="icon ion-chevron-right icon-accessory"></i>
-
-        <ion-option-button class="button-assertive" ng-click="remove(chat)">
-          Delete
-        </ion-option-button>
       </ion-item>
     </ion-list>
   </ion-content>
