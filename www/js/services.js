@@ -6,29 +6,49 @@ angular.module('starter.services', [])
   // Some fake testing data
   var chats = [{
     id: 0,
-    name: 'Ben Sparrow',
-    lastText: 'You on your way?',
-    face: 'https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png'
+    title: 'ACM Nerd Ngiht',
+    type: 'CompSci',
+    img: 'img/ACMnerd.jpg'
   }, {
     id: 1,
-    name: 'Max Lynx',
-    lastText: 'Hey, it\'s me',
-    face: 'https://avatars3.githubusercontent.com/u/11214?v=3&s=460'
+    title: 'Free Tutorial Help: Math Success Lab',
+    type: 'Math Tutor',
+    img: 'img/MathTutor.jpg'
   },{
     id: 2,
-    name: 'Adam Bradleyson',
-    lastText: 'I should buy a boat',
-    face: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
+    title: 'Pizza with Professors',
+    type: 'Sociology Club',
+    img: 'img/pizzawithprof.jpg'
   }, {
     id: 3,
-    name: 'Perry Governor',
-    lastText: 'Look at my mukluks!',
-    face: 'https://pbs.twimg.com/profile_images/491995398135767040/ie2Z_V6e.jpeg'
+    title: ' "REEBOOT" Tournament',
+    type: 'Gaming',
+    img: 'img/RebootTourn.jpg'
   }, {
     id: 4,
-    name: 'Mike Harrington',
-    lastText: 'This is wicked good ice cream.',
-    face: 'https://pbs.twimg.com/profile_images/578237281384841216/R3ae1n61.png'
+    title: 'UMKC Stress less fest',
+    type: 'UMKC University',
+    img: 'img/Stressless.jpg'
+  },{
+    id: 5,
+    title: 'Study Abroad in Portugal!!',
+    type: 'Travel',
+    img: 'img/studyprot.jpg'
+  },{
+    id: 6,
+    title: 'SUMMER JOBS',
+    type: 'Sponsor',
+    img: 'img/Sumjobs.jpg'
+  },{
+    id: 7,
+    title: 'Official Textbook sellback & return',
+    type: 'UMKC University',
+    img: 'img/textbook.jpg'
+  },{
+    id: 8,
+    title: 'Vote for Alad!!',
+    type: 'Student Council',
+    img: 'img/voteAlad.jpg'
   }];
 
   return {
