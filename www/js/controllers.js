@@ -1,5 +1,26 @@
 angular.module('starter.controllers', [])
 
+.controller('DashCtrl', function($scope) {})
+
+//This is the browse controller. I recycled the chats controller and still havent changed the names yet
+.controller('ChatsCtrl', function($scope, Chats) {
+  $scope.chats = Chats.all();
+  $scope.remove = function(chat) {
+    Chats.remove(chat);
+  };
+})
+//This is the browse details controller. Again havent recycled the name
+.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
+  $scope.chat = Chats.get($stateParams.chatId);
+})
+
+.controller('AccountCtrl', function($scope) {
+  $scope.settings = {
+    enableFriends: true
+  };
+})
+
+//Modal controller for details page
 .controller('detailsModalCtrl', function($scope, $ionicModal, $ionicSlideBoxDelegate) {
 
   $scope.navSlide = function(index) {
@@ -26,22 +47,5 @@ angular.module('starter.controllers', [])
 
   });
 })
-
-.controller('DashCtrl', function($scope) {})
-
-.controller('ChatsCtrl', function($scope, Chats) {
-  $scope.chats = Chats.all();
-  $scope.remove = function(chat) {
-    Chats.remove(chat);
-  };
-})
-
-.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
-  $scope.chat = Chats.get($stateParams.chatId);
-})
-
-.controller('AccountCtrl', function($scope) {
-  $scope.settings = {
-    enableFriends: true
-  };
-});
+//This mark the end of module
+;

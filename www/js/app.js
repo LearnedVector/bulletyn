@@ -48,7 +48,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
   .state('tab.details', {
-    url: '/details/:chatid',
+    url: '/details/:chatId',
     views: {
       'tab-browse': {
         templateUrl: 'templates/tabs/browse-details/details.html',
