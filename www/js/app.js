@@ -42,7 +42,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     url: '/browse',
     views: {
       'tab-browse': {
-        templateUrl: 'templates/tabs/browse.html'
+        templateUrl: 'templates/tabs/browse.html',
+        controller: 'detailsCtrl'
       }
     }
   })
@@ -51,6 +52,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     views: {
       'tab-post': {
         templateUrl: 'templates/tabs/post.html'
+      }
+    }
+  })
+  .state('tab.browse.details', {
+    url: 'browse/details',
+    views: {
+      'details': {
+        templateUrl: 'templates/tabs/browse-details/details.html'
       }
     }
   });
