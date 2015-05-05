@@ -27,7 +27,7 @@ angular.module('starter.controllers', [])
     $ionicSlideBoxDelegate.slide(index, 500);
   };
 
-  $ionicModal.fromTemplateUrl('templates/tabs/browse-details/details.html', {
+  $ionicModal.fromTemplateUrl('templates/tabs/browse-details/details-modal.html', {
     scope: $scope,
     animation: 'slide-in-up'
   }).then(function(modal) {

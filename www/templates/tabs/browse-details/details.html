@@ -7,10 +7,30 @@
 
 <ion-view view-title="{{chat.type}}">
   <ion-content class="padding">
-    <img ng-src="{{chat.img}}">
-    <p>
-      {{chat.title}}
 
-    </p>
+  <div class="list card" ng-controller="detailsModalCtrl">
+    <div class="item">
+      <h2>{{chat.title}}</h2>
+      <p>{{chat.location}}</p>
+      <p>{{chat.date}},&nbsp;{{chat.time}}</p>
+    </div>
+
+    <div class="item item-body">
+      <div class="item item-image" style="height:300px;">
+      <img class="full-image" ng-src="{{chat.img}}" ng-click="openModal()">
+      </div>
+      <div class="item">
+      <p>
+        {{chat.details}}
+      </p>
+    </div>
+    </div>
+    <div class="item">
+        Contact: {{chat.contact}}
+    </div>
+  </div>
+
+
+
   </ion-content>
 </ion-view>
