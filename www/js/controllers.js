@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-.controller('detailsCtrl', function($scope, $ionicModal, $ionicSlideBoxDelegate) {
+.controller('detailsModalCtrl', function($scope, $ionicModal, $ionicSlideBoxDelegate) {
 
   $scope.navSlide = function(index) {
     $ionicSlideBoxDelegate.slide(index, 500);
