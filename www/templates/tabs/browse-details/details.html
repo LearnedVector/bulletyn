@@ -5,28 +5,28 @@
   The Friends service returns an array of friend data
 -->
 
-<ion-view view-title="{{chat.type}}">
+<ion-view view-title="{{detail.type}}">
   <ion-content class="padding" style="background-color:#F0F0F0">
 
   <div class="list card" ng-controller="detailsModalCtrl">
     <div class="item">
-      <h2>{{chat.title}}</h2>
-      <p>{{chat.location}}</p>
-      <p>{{chat.date}}&nbsp;{{chat.time}}</p>
+      <h2>{{detail.title}}</h2>
+      <p>{{detail.location}}</p>
+      <p>{{detail.date}}&nbsp;{{detail.time}}</p>
     </div>
 
     <div class="item item-body">
       <div class="item item-image">
-      <img class="full-image" ng-src="{{chat.img}}" ng-click="openModal()">
+      <img class="full-image" ng-src="{{detail.img}}" ng-click="openModal()">
       </div>
       <div class="item">
       <p>
-        {{chat.details}}
+        {{detail.details}}
       </p>
     </div>
     </div>
     <div class="item">
-        Contact: {{chat.contact}}
+        Contact: {{detail.contact}}
     </div>
   </div>
 

@@ -43,16 +43,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     views: {
       'tab-browse': {
         templateUrl: 'templates/tabs/browse.html',
-        controller: 'ChatsCtrl'
+        controller: 'BrowseDetailCtrl'
       }
     }
   })
   .state('tab.details', {
-    url: '/details/:chatId',
+    url: '/details/:detailId',
     views: {
       'tab-browse': {
         templateUrl: 'templates/tabs/browse-details/details.html',
-        controller: 'ChatDetailCtrl'
+        controller: 'DetailCtrl'
       }
     }
   })
