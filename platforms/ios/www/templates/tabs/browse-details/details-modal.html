@@ -1,0 +1,10 @@
+<ion-modal-view>
+  <ion-header-bar class="bar-dark" style="background-color: black">
+    <i  style="font-size:2em;"class="ion-ios-close" ng-click="closeModal()"></i>
+    <h1 class="title">{{detail.title}}</h1>
+  </ion-header-bar>
+  <ion-content style="background-color: black">
+    <br><br>
+      <img class="full-image" ng-src="{{detail.img}}" ng-click="closeModal()"></img>
+  </ion-content>
+</ion-modal-view>

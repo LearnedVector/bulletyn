@@ -20,6 +20,7 @@ angular.module('starter.controllers', [])
   $scope.forum = Forums.get($stateParams.forumId);
 })
 
+
 .controller('AccountCtrl', function($scope) {
   $scope.settings = {
     enableFriends: true
