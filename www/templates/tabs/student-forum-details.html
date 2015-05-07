@@ -1,21 +1,31 @@
-<ion-view view-title="Details">
+<ion-view view-title="">
   <ion-content class="padding" style="background-color:#F0F0F0">
 
-  <div class="list card" >
-    <div class=" item-text-wrap">
-        <h4 style="margin: 10px 0 10px 10px;">{{forum.title}}</4>
-    </div>
+  <div class="list card">
 
+    <div class="item item-text-wrap">
+      <h3 style="margin: 10px 0 10px 10px;">{{forum.title}}</h3>
+    </div>
 
     <div class="item item-body">
-      <div class="item">
-        <p>{{forum.details}}</p>
+      <p>
+        {{forum.details}}
+        <span style="margin: 0 0 0 220px; font-size: .7em;">{{forum.time}} ago </span>
+      </p>
     </div>
+    <div class="item tabs tabs-secondary tabs-icon-right">
+      <div class="tab-item">
+        <p>{{forum.name}}</p>
+      </div>
+      <div class="tab-item">
+      </div>
+      <a class="tab-item" href="#">
+        <i class="icon ion-email"></i>
+      </a>
     </div>
-    <div class="item">
-       {{forum.name}}     <span style="margin: 0 0 0 200px; font-size: .5em;">{{forum.time}} ago </span>
-    </div>
+
   </div>
+
 
   </ion-content>
 </ion-view>
