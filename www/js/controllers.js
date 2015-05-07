@@ -28,7 +28,7 @@ angular.module('bulletyn.controllers', [])
 
   $ionicModal.fromTemplateUrl('templates/tabs/browse-details/details-modal.html', {
     scope: $scope,
-    animation: 'slide-in-up'
+    animation: 'fade-in'
   }).then(function(modal) {
       $scope.modal = modal;
   });
