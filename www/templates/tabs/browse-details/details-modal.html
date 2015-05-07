@@ -7,7 +7,7 @@
     <ion-slide-box show-pager="true" on-slide-changed="slideHasChanged($index)">
 <ion-slide ng-repeat="detail in details">
   <div class="card">
-  <img class="full-image" ng-src="{{detail.img}}" ng-click="closeModal()"></img>
+  <a href="#/tab/details/{{detail.id}}"><img class="full-image" ng-src="{{detail.img}}" ng-click="closeModal()"></img></a>
 </div>
 </ion-slide>
 </ion-slide-box>
