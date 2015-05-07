@@ -1,0 +1,12 @@
+<ion-view view-title="Student Forum">
+  <ion-content style="background-color:#F0F0F0">
+    <ion-list class="item card">
+      <a class="item"ng-repeat="forum in forums" href="#/tab/forumDetails/{{forum.id}}">
+        <div class=" item-text-wrap">
+            <h2>{{forum.title}}</h2>
+        </div>
+        <span style="margin: 0 0 0 230px; font-size: .5em;">{{forum.time}} ago </span>
+      </a>
+    </ion-list>
+  </ion-content>
+</ion-view>

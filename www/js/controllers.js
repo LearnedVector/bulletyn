@@ -14,6 +14,19 @@ angular.module('starter.controllers', [])
   $scope.detail = Details.get($stateParams.detailId);
 })
 
+
+.controller('ForumCtrl', function($scope, Forums) {
+  $scope.forums = Forums.all();
+  $scope.remove = function(forum) {
+    Forums.remove(forum);
+  };
+})
+//this controller is for the details page
+.controller('ForumDetailsCtrl', function($scope, $stateParams, Forums) {
+  $scope.forum = Forums.get($stateParams.forumId);
+})
+
+
 .controller('AccountCtrl', function($scope) {
   $scope.settings = {
     enableFriends: true

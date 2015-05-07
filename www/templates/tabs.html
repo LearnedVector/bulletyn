@@ -5,13 +5,18 @@ navigation history that also transitions its views in and out.
 -->
 <ion-tabs class="tabs-icon-top tabs-color-active-positive tabs-stable">
 
-  <!-- Dashboard Tab -->
-  <ion-tab title="Browse" icon-off="ion-ios-browsers-outline" icon-on="ion-ios-browsers" href="#/tab/browse">
+  <!-- Discover Tab -->
+  <ion-tab title="Discover" icon-off="ion-search" icon-on="ion-search" href="#/tab/browse">
     <ion-nav-view name="tab-browse"></ion-nav-view>
   </ion-tab>
 
-  <!-- Account Tab -->
-  <ion-tab title="Post" icon-off="ion-ios-plus-empty" icon-on="ion-ios-plus-outline" href="#/tab/post">
+<!--- Forum Tab -->
+<ion-tab title="Student Forum" icon-off="ion-chatbox" icon-on="ion-chatbox-working" href="#/tab/forum">
+  <ion-nav-view name="tab-forum"></ion-nav-view>
+</ion-tab>
+
+  <!-- Post Tab -->
+  <ion-tab title="Post" icon-off="ion-compose" icon-on="ion-compose" href="#/tab/post">
     <ion-nav-view name="tab-post"></ion-nav-view>
   </ion-tab>
 

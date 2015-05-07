@@ -56,6 +56,24 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
+  .state('tab.forum', {
+    url: '/forum',
+    views: {
+      'tab-forum': {
+        templateUrl: 'templates/tabs/student-forum.html',
+        controller: 'ForumCtrl'
+      }
+    }
+  })
+  .state('tab.forumDetails', {
+    url: '/forumDetails/:forumId',
+    views: {
+      'tab-forum': {
+        templateUrl: 'templates/tabs/student-forum-details.html',
+        controller: 'ForumDetailsCtrl'
+      }
+    }
+  })
   .state('tab.post', {
     url: '/post',
     views: {

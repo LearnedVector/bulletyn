@@ -1,4 +1,4 @@
-<ion-view view-title="UMKC">
+<ion-view view-title="Discover">
   <ion-content style="background-color:#F0F0F0">
     <ion-list class=" item card">
       <ion-item class=" item-thumbnail-left item-icon-right" ng-repeat="detail in details" type="item-text-wrap" href="#/tab/details/{{detail.id}}">
@@ -6,6 +6,7 @@
           <br>
         <h2>{{detail.title}}</h2>
         <p>{{detail.type}}</p>
+        <p>{{detail.date}}</p>
 
         <!-- Took out location and date for now to make it look simpler
         <p>{{chat.location}}</p>
