@@ -1,7 +1,7 @@
 <ion-view view-title="Discover">
   <ion-content style="background-color:#F0F0F0" ng-controller="detailsModalCtrl">
     <ion-list class="item card">
-      <div class="item" ng-click="openModal()"><i class=" icon ion-pound"></i>discovery
+      <div class="item" ng-click="openModal()"><i class="icon ion-pound"></i><span style="color:#11c1f3;">discovery</spa>
     </div>
       <ion-item class=" item-thumbnail-left item-icon-right" ng-repeat="detail in details" type="item-text-wrap" href="#/tab/details/{{detail.id}}">
         <img ng-src="{{detail.img}}">
