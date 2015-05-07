@@ -1,6 +1,4 @@
-angular.module('starter.controllers', [])
-
-.controller('DashCtrl', function($scope) {})
+angular.module('bulletyn.controllers', [])
 
 //This controller is for the browse page
 .controller('BrowseDetailCtrl', function($scope, Details) {
@@ -20,11 +18,6 @@ angular.module('starter.controllers', [])
   $scope.forum = Forums.get($stateParams.forumId);
 })
 
-.controller('AccountCtrl', function($scope) {
-  $scope.settings = {
-    enableFriends: true
-  };
-})
 
 //Modal controller for details page
 .controller('detailsModalCtrl', function($scope, $ionicModal, $ionicSlideBoxDelegate) {

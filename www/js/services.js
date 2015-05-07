@@ -1,4 +1,4 @@
-angular.module('starter.services', [])
+angular.module('bulletyn.services', [])
 
 .factory('Details', function() {
   // Might use a resource here that returns a JSON array
@@ -100,9 +100,6 @@ angular.module('starter.services', [])
     all: function() {
       return details;
     },
-    remove: function(detail) {
-      chats.splice(details.indexOf(detail), 1);
-    },
     get: function(detailId) {
       for (var i = 0; i < details.length; i++) {
         if (details[i].id === parseInt(detailId)) {
@@ -177,9 +174,6 @@ angular.module('starter.services', [])
   return {
     all: function() {
       return forums;
-    },
-    remove: function(forum) {
-      forums.splice(forums.indexOf(forum), 1);
     },
     get: function(forumId) {
       for (var i = 0; i < forums.length; i++) {

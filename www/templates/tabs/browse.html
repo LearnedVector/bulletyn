@@ -1,6 +1,9 @@
 <ion-view view-title="Discover">
-  <ion-content style="background-color:#F0F0F0">
-    <ion-list class=" item card">
+  <ion-content style="background-color:#F0F0F0" ng-controller="detailsModalCtrl">
+    <ion-list class="item card">
+      <div class="item-icon-right" ng-click="openModal()">discovery
+      <i class="ion-images"></i>
+    </div>
       <ion-item class=" item-thumbnail-left item-icon-right" ng-repeat="detail in details" type="item-text-wrap" href="#/tab/details/{{detail.id}}">
         <img ng-src="{{detail.img}}">
           <br>

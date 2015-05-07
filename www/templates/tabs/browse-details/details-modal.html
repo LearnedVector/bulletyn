@@ -1,10 +1,15 @@
 <ion-modal-view>
-  <ion-header-bar class="bar-dark" style="background-color: black">
-    <i  style="font-size:2em;"class="ion-ios-close" ng-click="closeModal()"></i>
-    <h1 class="title">{{detail.title}}</h1>
+  <ion-header-bar style="background-color:#F0F0F0"><span ng-click="closeModal()" style="font-size:2em; margin:auto 0 auto 5px;; "class="ion-close"></span>
+  <span style="font-size:1.2em; color:black; margin: auto;">Discovery Mode</span>
   </ion-header-bar>
-  <ion-content style="background-color: black">
+  <ion-content style="background-color:#F0F0F0">
     <br><br>
-      <img class="full-image" ng-src="{{detail.img}}" ng-click="closeModal()"></img>
+    <ion-slide-box show-pager="true" on-slide-changed="slideHasChanged($index)">
+<ion-slide ng-repeat="detail in details">
+  <div class="card">
+  <img class="full-image" ng-src="{{detail.img}}" ng-click="closeModal()"></img>
+</div>
+</ion-slide>
+</ion-slide-box>
   </ion-content>
 </ion-modal-view>
