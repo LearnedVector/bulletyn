@@ -1,7 +1,7 @@
 <ion-view view-title="{{detail.type}}">
   <ion-content class="padding" style="background-color:#F0F0F0">
 
-  <div class="list card" ng-controller="detailsModalCtrl">
+  <div class="list card">
     <div class="item">
       <h2>{{detail.title}}</h2>
       <p>{{detail.location}}</p>
@@ -10,7 +10,7 @@
 
     <div class="item item-body">
       <div class="item item-image">
-      <img class="full-image" ng-src="{{detail.img}}" ng-click="openModal()">
+      <img class="full-image" ng-src="{{detail.img}}">
       </div>
       <div class="item">
       <p>
@@ -18,8 +18,16 @@
       </p>
     </div>
     </div>
-    <div class="item">
-        Contact: {{detail.contact}}
+    <div class="item tabs tabs-secondary tabs-icon-right">
+      <a class="tab-item" href="#">
+
+      </a>
+      <a class="tab-item" href="#">
+      
+      </a>
+      <a class="tab-item" href="#">
+        <i class="icon ion-email"></i>
+      </a>
     </div>
   </div>
 
