@@ -10,17 +10,23 @@
     <div class="item item-body">
       <p>
         {{forum.details}}
-        <span style="margin: 0 0 0 220px; font-size: .7em;">{{forum.time}} ago </span>
+        <div class="row" style="color:#5D5D5D; font-size:.7em;">
+        <div class="col-50">
+        {{forum.name}}
+        </div>
+        <div class="cold-25 col-offset-25">
+          {{forum.time}} ago
+        </div>
+      </div>
       </p>
     </div>
     <div class="item tabs tabs-secondary tabs-icon-right">
       <div class="tab-item">
-        <p>{{forum.name}}</p>
       </div>
       <div class="tab-item">
       </div>
       <a class="tab-item" href="#">
-        <i class="icon ion-email"></i>
+        <i class="icon ion-paper-airplane"></i>
       </a>
     </div>
 

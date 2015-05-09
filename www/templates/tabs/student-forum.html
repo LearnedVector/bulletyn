@@ -5,7 +5,14 @@
         <div class=" item-text-wrap">
             <h2>{{forum.title}}</h2>
         </div>
-        <span style="margin: 0 0 0 230px; font-size: .5em;">{{forum.time}} ago </span>
+        <div class="row" style="color:#5D5D5D; font-size:.7em;">
+        <div class="col-25">
+        {{forum.name}}
+        </div>
+        <div class="cold-25 col-offset-50">
+          {{forum.time}} ago
+        </div>
+      </div>
       </a>
     </ion-list>
   </ion-content>
